@@ -55,7 +55,8 @@ nav:
     
 plugins:
     - search
-
+    - minify:
+        minify_html: true
 
 theme:
   name: material
@@ -79,8 +80,8 @@ theme:
   features:
     - navigation.sections
     - navigation.tabs
-  logo: https://en.gravatar.com/userimage/166531410/7c1d1716d8ab9aa79b61588a88bffce5.jpeg
-  favicon: https://en.gravatar.com/userimage/166531410/7c1d1716d8ab9aa79b61588a88bffce5.jpeg
+  logo: https://github.com/cwoodruff/aspnet-5-web-api-workshop/blob/main/rest-api.png?raw=true
+  favicon: https://raw.githubusercontent.com/cwoodruff/aspnet-5-web-api-workshop/main/rest-api.ico
 
     
 # Customization
