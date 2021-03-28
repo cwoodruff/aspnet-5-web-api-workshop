@@ -79,6 +79,9 @@ theme:
   features:
     - navigation.sections
     - navigation.tabs
+  logo: https://en.gravatar.com/userimage/166531410/7c1d1716d8ab9aa79b61588a88bffce5.jpeg
+  favicon: https://en.gravatar.com/userimage/166531410/7c1d1716d8ab9aa79b61588a88bffce5.jpeg
+
     
 # Customization
 extra:
@@ -89,6 +92,8 @@ extra:
       link: https://twitter.com/cwoodruff
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/chriswoodruff/
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@chriswoodywoodruff
       
  # Extensions
 markdown_extensions:
