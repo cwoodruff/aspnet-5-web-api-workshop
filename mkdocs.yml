@@ -19,7 +19,7 @@ nav:
         - Installing ASP.NET 5: installing-aspnet-5.md
         - Installing SQL Server: installing-mssql.md
         - Setting up Azure SQL: setting-up-azure-sql.md
-        - Instlling Postman: installing-postman.md
+        - Installing Postman: installing-postman.md
     - Standing up a Web API:
         - What is a Web API?: Standing Up an ASP.NET Core Web API/what-is-a-web-api.md
         - What is REST?: Standing Up an ASP.NET Core Web API/what-is-rest.md
