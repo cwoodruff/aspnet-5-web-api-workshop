@@ -1,6 +1,6 @@
 ---
-title: Installing .NET 5 and ASP.NET 5
-description: Installing the .NET 5 SDK for the workshop
+title: Workshop Home
+description: Workshop Home
 author: cwoodruff
 ---
 # Workshop Home
