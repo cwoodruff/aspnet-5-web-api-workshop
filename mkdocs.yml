@@ -57,6 +57,8 @@ plugins:
     - search
     - minify:
         minify_html: true
+    # - encryptcontent:
+    #    global_password: 'arrakis'
 
 theme:
   name: material
