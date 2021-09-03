@@ -24,20 +24,17 @@ nav:
         - What is a Web API?: Standing Up an ASP.NET Core Web API/what-is-a-web-api.md
         - What is REST?: Standing Up an ASP.NET Core Web API/what-is-rest.md
         - Your first ASP.NET Core Web API: Standing Up an ASP.NET Core Web API/your-first-aspnet-core-web-api.md
-        - Developing Data Access for your Web API: Standing Up an ASP.NET Core Web API/develop-data-access.md
-        - Handling Errors in your API: Standing Up an ASP.NET Core Web API/handling-errors.md
+        - Designing the NTier API: Standing Up an ASP.NET Core Web API/designing-ntier-api.md
+        - Developing the API Endpoints: Standing Up an ASP.NET Core Web API/ntier-api-endpoints.md
+        - Developing Data Access for your Web API: Standing Up an ASP.NET Core Web API/ntier-data-access.md
+        - Developing the API Business Rules: Standing Up an ASP.NET Core Web API/api-business-rules.md
         - Caching Data in your API: Standing Up an ASP.NET Core Web API/caching-data.md
         - Identity in your Web API: Standing Up an ASP.NET Core Web API/identity.md
         - Versioning your Web API: Standing Up an ASP.NET Core Web API/versioning.md
-        - Documenting your API with Swagger: Standing Up an ASP.NET Core Web API/documenting-with-swagger.md
+        - Documenting your API with OpenAPI: Standing Up an ASP.NET Core Web API/documenting-with-openapi.md
     - Testing Your API:
         - Creating and using Unit Testing for your API: Testing Your AP/unit-testing.md
         - Creating and using Integrating Testing for your API: Testing Your AP/integration-testing.md
-    - Simple NTier Web API:
-        - Designing the NTier API: Developing a Simple NTier Architecture for ASP.NET Core Web API/designing-ntier-api.md
-        - Developing the API Endpoints: Developing a Simple NTier Architecture for ASP.NET Core Web API/ntier-api-endpoints.md
-        - Developing the API Data Access: Developing a Simple NTier Architecture for ASP.NET Core Web API/ntier-data-access.md
-        - Using the Repository Pattern in You API Architecture: Developing a Simple NTier Architecture for ASP.NET Core Web API/ntier-repository-pattern.md
     - Domain Driven Web API:
         - Designing the Domain-Driven API: Developing a Domain Driven Architecture for ASP.NET Core Web API/domain-drive-api.md
         - Using the Ports and Adapter Pattern in Your API Architecture: Developing a Domain Driven Architecture for ASP.NET Core Web API/ports-adapter-pattern.md
@@ -57,8 +54,6 @@ plugins:
     - search
     - minify:
         minify_html: true
-    # - encryptcontent:
-    #    global_password: 'arrakis'
 
 theme:
   name: material
