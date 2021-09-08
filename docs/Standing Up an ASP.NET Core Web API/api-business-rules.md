@@ -1,6 +1,6 @@
 ---
-title: Using the Repository Pattern in You API Architecture
-description: Using the Repository Pattern in You API Architecture
+title: Developing the Web API Business Rules
+description: Developing the Web API Business Rules
 author: cwoodruff
 ---
 # Using the Repository Pattern in You API Architecture
