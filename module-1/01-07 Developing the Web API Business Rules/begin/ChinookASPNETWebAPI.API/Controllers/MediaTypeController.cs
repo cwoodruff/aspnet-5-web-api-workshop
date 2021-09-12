@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ChinookASPNETWebAPI.Domain.ApiModels;
 using ChinookASPNETWebAPI.Domain.Supervisor;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ChinookASPNETWebAPI.API.Controllers
 {
     [Route("api/[controller]")]
-    [ResponseCache(Duration = 604800)] // cache for a week
-    [EnableCors("CorsPolicy")]
     [ApiController]
     public class MediaTypeController : ControllerBase
     {
@@ -26,7 +23,6 @@ namespace ChinookASPNETWebAPI.API.Controllers
 
         [HttpGet]
         [Produces("application/json")]
-        [ResponseCache(Duration = 604800)] // cache for a week
         public async Task<ActionResult<List<MediaTypeApiModel>>> Get()
         {
             return Ok(await _chinookSupervisor.GetAllMediaType());

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ChinookASPNETWebAPI.Domain.ApiModels;
 using ChinookASPNETWebAPI.Domain.Supervisor;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ChinookASPNETWebAPI.API.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("CorsPolicy")]
     [ApiController]
     public class TrackController : ControllerBase
     {
@@ -39,21 +37,21 @@ namespace ChinookASPNETWebAPI.API.Controllers
 
         [HttpGet("album/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<TrackApiModel>> GetByAlbumId(int id)
+        public async Task<ActionResult<List<TrackApiModel>>> GetByAlbumId(int id)
         {
             return Ok(await _chinookSupervisor.GetTrackByAlbumId(id));
         }
 
         [HttpGet("mediatype/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<TrackApiModel>> GetByMediaTypeId(int id)
+        public async Task<ActionResult<List<TrackApiModel>>> GetByMediaTypeId(int id)
         {
             return Ok(await _chinookSupervisor.GetTrackByMediaTypeId(id));
         }
 
         [HttpGet("genre/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<TrackApiModel>> GetByGenreId(int id)
+        public async Task<ActionResult<List<TrackApiModel>>> GetByGenreId(int id)
         {
             return Ok(await _chinookSupervisor.GetTrackByGenreId(id));
         }
@@ -82,14 +80,14 @@ namespace ChinookASPNETWebAPI.API.Controllers
 
         [HttpGet("artist/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<TrackApiModel>> GetByArtistId(int id)
+        public async Task<ActionResult<List<TrackApiModel>>> GetByArtistId(int id)
         {
             return Ok(await _chinookSupervisor.GetTrackByArtistId(id));
         }
 
         [HttpGet("invoice/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<TrackApiModel>> GetByInvoiceId(int id)
+        public async Task<ActionResult<List<TrackApiModel>>> GetByInvoiceId(int id)
         {
             return Ok(await _chinookSupervisor.GetTrackByInvoiceId(id));
         }

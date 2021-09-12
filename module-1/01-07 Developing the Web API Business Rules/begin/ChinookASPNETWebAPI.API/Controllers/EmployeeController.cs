@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ChinookASPNETWebAPI.Domain.ApiModels;
 using ChinookASPNETWebAPI.Domain.Supervisor;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ChinookASPNETWebAPI.API.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("CorsPolicy")]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
@@ -39,14 +37,14 @@ namespace ChinookASPNETWebAPI.API.Controllers
 
         [HttpGet("reportsto/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<List<EmployeeApiModel>>> GetReportsTo(int id)
+        public async Task<ActionResult<EmployeeApiModel>> GetReportsTo(int id)
         {
             return Ok(await _chinookSupervisor.GetEmployeeById(id));
         }
 
         [HttpGet("directreports/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<EmployeeApiModel>> GetDirectReports(int id)
+        public async Task<ActionResult<List<EmployeeApiModel>>> GetDirectReports(int id)
         {
             return Ok(await _chinookSupervisor.GetEmployeeById(id));
         }

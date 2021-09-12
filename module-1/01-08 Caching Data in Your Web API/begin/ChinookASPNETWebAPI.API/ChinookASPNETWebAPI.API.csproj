@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChinookASPNETWebAPI.Data\ChinookASPNETWebAPI.Data.csproj" />
+    <ProjectReference Include="..\ChinookASPNETWebAPI.Domain\ChinookASPNETWebAPI.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

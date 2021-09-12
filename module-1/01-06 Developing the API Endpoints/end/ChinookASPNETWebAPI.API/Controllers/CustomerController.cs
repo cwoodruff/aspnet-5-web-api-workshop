@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ChinookASPNETWebAPI.Domain.ApiModels;
 using ChinookASPNETWebAPI.Domain.Supervisor;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ChinookASPNETWebAPI.API.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("CorsPolicy")]
     [ApiController]
     public class CustomerController : ControllerBase
     {
@@ -39,7 +37,7 @@ namespace ChinookASPNETWebAPI.API.Controllers
 
         [HttpGet("supportrep/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<CustomerApiModel>> GetBySupportRepId(int id)
+        public async Task<ActionResult<EmployeeApiModel>> GetBySupportRepId(int id)
         {
             return Ok(await _chinookSupervisor.GetEmployeeById(id));
         }

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ChinookASPNETWebAPI.Domain.ApiModels;
 using ChinookASPNETWebAPI.Domain.Supervisor;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ChinookASPNETWebAPI.API.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("CorsPolicy")]
     [ApiController]
     public class InvoiceController : ControllerBase
     {
@@ -39,7 +37,7 @@ namespace ChinookASPNETWebAPI.API.Controllers
 
         [HttpGet("customer/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<InvoiceApiModel>> GetByCustomerId(int id)
+        public async Task<ActionResult<List<InvoiceApiModel>>> GetByCustomerId(int id)
         {
             return Ok(await _chinookSupervisor.GetInvoiceByCustomerId(id));
         }
@@ -68,7 +66,7 @@ namespace ChinookASPNETWebAPI.API.Controllers
 
         [HttpGet("employee/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<InvoiceApiModel>> GetByEmployeeId(int id)
+        public async Task<ActionResult<List<InvoiceApiModel>>> GetByEmployeeId(int id)
         {
             return Ok(await _chinookSupervisor.GetInvoiceByEmployeeId(id));
         }

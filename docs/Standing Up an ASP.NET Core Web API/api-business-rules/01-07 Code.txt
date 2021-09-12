@@ -1,0 +1,4 @@
+ADD FLUENTVALIDATION NUGET
+
+dotnet add package FluentValidation
+

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ChinookASPNETWebAPI.Domain.ApiModels;
 using ChinookASPNETWebAPI.Domain.Supervisor;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ChinookASPNETWebAPI.API.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("CorsPolicy")]
     [ApiController]
     public class PlaylistController : ControllerBase
     {
@@ -61,7 +59,7 @@ namespace ChinookASPNETWebAPI.API.Controllers
 
         [HttpGet("track/{id}")]
         [Produces("application/json")]
-        public async Task<ActionResult<TrackApiModel>> GetByTrackId(int id)
+        public async Task<ActionResult<List<PlaylistApiModel>>> GetByTrackId(int id)
         {
             return Ok(await _chinookSupervisor.GetPlaylistByTrackId(id));
         }
