@@ -1,0 +1,34 @@
+ADD VERSIONING NUGET PACKAGE TO API
+
+dotnet add package Microsoft.AspNetCore.Mvc.Versioning
+
+ADD API VERSIONING TO STARTUP
+
+services.AddApiVersioning();
+
+MODIFY ADDAPIVERSIONING FOR DETAILS
+
+services.AddApiVersioning(options =>
+{
+	options.AssumeDefaultVersionWhenUnspecified = true;
+	options.DefaultApiVersion = new ApiVersion(1, 0);
+	//options.DefaultApiVersion = new ApiVersion( new DateTime( 2020, 9, 22 ) );
+	//options.DefaultApiVersion =
+	//  new ApiVersion(new DateTime( 2020, 9, 22 ), "LetoII", 1, "Beta");
+	options.ReportApiVersions = true;
+	//options.ApiVersionReader = new HeaderApiVersionReader("api-version");
+});
+
+MODIFY CONTROLLER FOR VERSIONING
+
+[Route( "api/v{version:apiVersion}/[controller]" )]
+[ApiController]
+[EnableCors("CorsPolicy")]
+[ApiVersion( "1.0", Deprecated = true)]
+public class CustomerController : ControllerBase
+
+TEST IN POSTMAN
+
+https://localhost:44320/api/v1/Customer
+https://localhost:44320/api/v2/Customer
+
