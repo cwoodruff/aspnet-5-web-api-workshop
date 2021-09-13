@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookASPNETWebAPI.API", "ChinookASPNETWebAPI.API\ChinookASPNETWebAPI.API.csproj", "{0B469F6A-172E-419C-B9B8-EE69BA6AFDCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookASPNETWebAPI.Domain", "ChinookASPNETWebAPI.Domain\ChinookASPNETWebAPI.Domain.csproj", "{E09A98F2-71AC-4105-AB91-DEE7A6618DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookASPNETWebAPI.Data", "ChinookASPNETWebAPI.Data\ChinookASPNETWebAPI.Data.csproj", "{1BE72E26-B8E7-44DF-999B-A359C527AFF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B469F6A-172E-419C-B9B8-EE69BA6AFDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B469F6A-172E-419C-B9B8-EE69BA6AFDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B469F6A-172E-419C-B9B8-EE69BA6AFDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B469F6A-172E-419C-B9B8-EE69BA6AFDCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09A98F2-71AC-4105-AB91-DEE7A6618DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09A98F2-71AC-4105-AB91-DEE7A6618DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09A98F2-71AC-4105-AB91-DEE7A6618DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09A98F2-71AC-4105-AB91-DEE7A6618DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE72E26-B8E7-44DF-999B-A359C527AFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE72E26-B8E7-44DF-999B-A359C527AFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE72E26-B8E7-44DF-999B-A359C527AFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE72E26-B8E7-44DF-999B-A359C527AFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A636E50-D4C9-4057-89BB-BC1EDF6C2AE3}
+	EndGlobalSection
+EndGlobal

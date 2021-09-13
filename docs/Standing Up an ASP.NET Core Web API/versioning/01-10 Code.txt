@@ -2,7 +2,7 @@ ADD VERSIONING NUGET PACKAGE TO API
 
 dotnet add package Microsoft.AspNetCore.Mvc.Versioning
 
-ADD API VERSIONING TO STARTUP
+ADD API VERSIONING TO STARTUP CONFIGURESERVICES
 
 services.AddApiVersioning();
 
