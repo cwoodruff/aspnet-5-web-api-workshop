@@ -1,0 +1,78 @@
+INSTALL NUGET PACKAGES TO API
+
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer 
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore 
+dotnet add package Microsoft.AspNetCore.Identity.UI 
+
+INSTALL NUGET PACKAGE TO DATA
+
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore 
+
+UPDATE OUR APPSETTINGS.JSON IN API
+
+"JwtConfig": {
+    "SecretKey" : "jkbflfzogupbyhypamekltpwkumodlfa"
+  },
+** Note: https://www.random.org/strings/
+  
+CREATE NEW CLASS IN CONFIGURATION FOLDER IN API
+
+public class JwtConfig
+{
+	public string Secret { get; set; }
+}
+  
+ADD JWT CODE TO STARTUP
+
+services.Configure<JwtConfig>(configuration.GetSection("JwtConfig"));
+
+services.AddAuthentication(options => {
+		options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+		options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+		options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+	})
+	.AddJwtBearer(jwt => {
+		var key = Encoding.ASCII.GetBytes(configuration["JwtConfig:SecretKey"]);
+
+		jwt.SaveToken = true;
+		jwt.TokenValidationParameters = new TokenValidationParameters{
+			ValidateIssuerSigningKey= true,
+			IssuerSigningKey = new SymmetricSecurityKey(key),
+			ValidateIssuer = false, 
+			ValidateAudience = false,
+			RequireExpirationTime = false,
+			ValidateLifetime = true
+		}; 
+	});
+
+services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+	.AddEntityFrameworkStores<ChinookContext>();
+
+ADD TO STARTUP CONFIGURE IN API
+
+app.UseAuthentication();
+** Note: Add to very first line and has to be before app.UseAuthorization();
+
+ADD NEW CLASSES FOR IDENTITY IN IDENTITY FOLDER IN DOMAIN
+
+AuthResult
+RegisterModel
+RegistrationResponse
+LoginModel
+
+ADD REGISTER ACTION TO HOME CONTROLLER
+
+
+ADD LOGIN ACTION TO HOME CONTROLLER
+
+
+AUTHORIZE THE ALBUM CONTROLLER FOR IDENTITY
+
+
+TEST IN POSTMAN
+
+{
+  "name": "Chris Woodruff",
+  "email": "cwoodruff@live.com",
+  "password": "p@ssw0rd"
+}
