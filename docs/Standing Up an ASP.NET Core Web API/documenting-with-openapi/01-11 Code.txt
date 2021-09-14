@@ -67,3 +67,5 @@ CHANGE launchSettings.json TO LAUNCH SWAGGER ON RUN
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
 }
+
+** NOTE: Solution for versioning issues from @referbruv https://www.referbruv.com/blog/posts/integrating-aspnet-core-api-versions-with-swagger-ui
