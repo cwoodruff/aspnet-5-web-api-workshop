@@ -9,5 +9,5 @@ author: cwoodruff
 | ------------- | --------------------------------------------------------------------------- |
 | .NET 5        | [Download](https://dotnet.microsoft.com/download/dotnet)                    |
 | SQL Server    | [Download](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) |
-| Azure Account | [Create Account](https://azure.microsoft.com/en-us/free/)                   |
+| Azure Account (optional) | [Create Account](https://azure.microsoft.com/en-us/free/)                   |
 | Postman       | [Download](https://www.postman.com/downloads/)                              |
