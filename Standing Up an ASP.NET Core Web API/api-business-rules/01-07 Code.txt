@@ -2,3 +2,9 @@ ADD FLUENTVALIDATION NUGET
 
 dotnet add package FluentValidation
 
+look at annotation validation
+
+add error handing in Actions
+
+add CORS
+
