@@ -1,0 +1,71 @@
+ADD OPENAPI/SWAGGER NUGET PACKAGEs TO API
+
+dotnet add package Swashbuckle.AspNetCore.Swagger
+dotnet add package Swashbuckle.AspNetCore.SwaggerGen
+dotnet add package Swashbuckle.AspNetCore.SwaggerUI
+dotnet add package Swashbuckle.AspNetCore.Annotations
+
+ADD OPENAPI/SWAGGER TO STARTUP CONFIGURESERVICES
+
+services.AddSwaggerGen(c =>
+{
+	c.SwaggerDoc("v1", new OpenApiInfo
+	{
+		Version = "v1",
+		Title = "Chinook Music Store API",
+		Description = "A simple example ASP.NET Core Web API",
+		TermsOfService = new Uri("https://example.com/terms"),
+		Contact = new OpenApiContact
+		{
+			Name = "Chris Woodruff",
+			Email = string.Empty,
+			Url = new Uri("https://chriswoodruff.com")
+		},
+		License = new OpenApiLicense
+		{
+			Name = "Use under MIT",
+			Url = new Uri("https://opensource.org/licenses/MIT")
+		}
+	});
+	c.EnableAnnotations();
+});
+
+ADD OPENAPI/SWAGGER TO STARTUP CONFIGURE
+
+app.UseSwagger();
+app.UseSwaggerUI(s => s.SwaggerEndpoint("/swagger/v1/swagger.json", "v1 docs"));
+
+FIND THAT SWAGGER DOES NOT WORK WITH OUR VERSIONING
+
+DECORATE EVERY VERSION 2.0 CONTROLLER ACTION ENDPOINT WITH VERSIONING
+
+[MapToApiVersion("2.0")]
+
+INSTALL APIEXPLORER IN API
+
+dotnet add package Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
+
+ADD APIEXPLORER TO SERVICES IN CONFIGURESERVICES IN STARTUP
+
+services.AddVersionedApiExplorer(setup =>
+{
+	setup.GroupNameFormat = "'v'VVV";
+	setup.SubstituteApiVersionInUrl = true;
+});
+
+ADD IApiVersionDescriptionProvider TO CONFIGURE PARAMS IN STARTUP
+
+ADD ConfigureSwaggerOptions AND MODIFY THE SWAGGER CODE TO DOCUMENT EACH VERSION'S SWAGGER FILE
+
+CHANGE launchSettings.json TO LAUNCH SWAGGER ON RUN
+
+"IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger/",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+}
+
+** NOTE: Solution for versioning issues from @referbruv https://www.referbruv.com/blog/posts/integrating-aspnet-core-api-versions-with-swagger-ui
