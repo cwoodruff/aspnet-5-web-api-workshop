@@ -12,7 +12,7 @@ What is seen in the Response Header
 Response Header:
 Cache-Control: public,max-age=604800
 
-Test in Postman
+Test in Postman and web browser
 
 IN-MEMORY CACHING
 
