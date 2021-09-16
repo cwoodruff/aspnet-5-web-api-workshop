@@ -24,7 +24,7 @@ namespace ChinookASPNETWebAPI.Data.Repositories
 
         public async Task<List<Album>> GetAll() => await _context.Albums.AsNoTrackingWithIdentityResolution().ToListAsync();
 
-        public async Task<Album> GetById(int? id)
+        public async Task<Album> GetById(int id)
         {
             var dbAlbum = await _context.Albums.FindAsync(id);
             return dbAlbum;
