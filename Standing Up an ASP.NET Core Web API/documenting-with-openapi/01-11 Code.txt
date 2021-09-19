@@ -1,4 +1,4 @@
-ADD OPENAPI/SWAGGER NUGET PACKAGEs TO API
+ADD OPENAPI/SWAGGER NUGET PACKAGES TO API
 
 dotnet add package Swashbuckle.AspNetCore.Swagger
 dotnet add package Swashbuckle.AspNetCore.SwaggerGen
