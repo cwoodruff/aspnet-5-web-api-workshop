@@ -32,15 +32,16 @@ nav:
         - Identity in your Web API: Standing Up an ASP.NET Core Web API/identity.md
         - Versioning your Web API: Standing Up an ASP.NET Core Web API/versioning.md
         - Documenting your API with OpenAPI: Standing Up an ASP.NET Core Web API/documenting-with-openapi.md
+        - Formatting Reponse Data in your API: Standing Up an ASP.NET Core Web API/formatting-response-data.md
+        - Using the PATCH HTTP Request in your API: Standing Up an ASP.NET Core Web API/using-patch-request.md
     - Testing Your API:
         - Creating and using Unit Testing for your API: Testing Your AP/unit-testing.md
         - Creating and using Integrating Testing for your API: Testing Your AP/integration-testing.md
-    - Hypermedia Web API:
-        - Designing the Hypermedia API: Developing a Hypermedia Architecture for ASP.NET Core Web API/designing-hypermedia-api.md
-        - Using the HATEOAS Constraint in your API: Developing a Hypermedia Architecture for ASP.NET Core Web API/hateoas-constraint-api.md
-        - Generating the JSON Representation for the API Resources: Developing a Hypermedia Architecture for ASP.NET Core Web API/generating-json-rep-for-api.md
-        - Generating Hypermedia Links in Domain-Driven ASP.NET Core Web API: Developing a Hypermedia Architecture for ASP.NET Core Web API/generating-hyperlinks-for-api.md
-        - How to Test your Hypermedia API: Developing a Hypermedia Architecture for ASP.NET Core Web API/hypermedia-testing.md
+        - Testing your API with HttpRepl: Testing Your AP/testing-with-httprepl.md
+    - Consuming ASP.NET Web API:
+        - Consuming ASP.NET Web API in .NET: Consuming ASP.NET Web API/consuming-web-api-in-dotnet.md
+        - Consuming ASP.NET Web API with OpenAPI Document: Consuming ASP.NET Web API/consuming-web-api-with-openapi.md
+        - Consuming ASP.NET Web API in Javascript: Consuming ASP.NET Web API/consuming-web-api-in-javascript.md
     
 plugins:
     - search
