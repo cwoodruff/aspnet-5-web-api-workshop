@@ -30,7 +30,7 @@ namespace ChinookASPNETWebAPI.API
             services.AddHealthChecks();
             services.AddCaching(Configuration);
             services.AddIdentity(Configuration);
-            services.AddVersioining();
+            services.AddVersioning();
             services.AddApiExplorer();
             services.AddSwaggerServices();
             services.AddControllers();

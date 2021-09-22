@@ -115,7 +115,7 @@ namespace ChinookASPNETWebAPI.API.Configurations
                 .AddEntityFrameworkStores<ChinookContext>();
         }
 
-        public static void AddVersioining(this IServiceCollection services)
+        public static void AddVersioning(this IServiceCollection services)
         {
             services.AddApiVersioning(options =>
             {
