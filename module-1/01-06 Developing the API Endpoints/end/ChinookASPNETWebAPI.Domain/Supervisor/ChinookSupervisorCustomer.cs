@@ -25,7 +25,7 @@ namespace ChinookASPNETWebAPI.Domain.Supervisor
             var customerApiModel = customer.Convert();
             customerApiModel.Invoices = (await GetInvoiceByCustomerId(customerApiModel.Id)).ToList();
             customerApiModel.SupportRep =
-                await GetEmployeeById(customerApiModel.SupportRepId.GetValueOrDefault());
+                await GetEmployeeById(customerApiModel.SupportRepId);
             customerApiModel.SupportRepName =
                 $"{customerApiModel.SupportRep.LastName}, {customerApiModel.SupportRep.FirstName}";
 
