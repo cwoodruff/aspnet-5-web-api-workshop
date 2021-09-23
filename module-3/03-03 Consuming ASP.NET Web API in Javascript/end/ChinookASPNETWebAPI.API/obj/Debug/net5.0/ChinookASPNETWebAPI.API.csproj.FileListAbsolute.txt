@@ -1,0 +1,6 @@
+C:\Git\aspnet-5-web-api-workshop\module-3\03-03 Consuming ASP.NET Web API in Javascript\end\ChinookASPNETWebAPI.API\obj\Debug\net5.0\ChinookASPNETWebAPI.API.csproj.AssemblyReference.cache
+C:\Git\aspnet-5-web-api-workshop\module-3\03-03 Consuming ASP.NET Web API in Javascript\end\ChinookASPNETWebAPI.API\obj\Debug\net5.0\ChinookASPNETWebAPI.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\aspnet-5-web-api-workshop\module-3\03-03 Consuming ASP.NET Web API in Javascript\end\ChinookASPNETWebAPI.API\obj\Debug\net5.0\ChinookASPNETWebAPI.API.AssemblyInfoInputs.cache
+C:\Git\aspnet-5-web-api-workshop\module-3\03-03 Consuming ASP.NET Web API in Javascript\end\ChinookASPNETWebAPI.API\obj\Debug\net5.0\ChinookASPNETWebAPI.API.AssemblyInfo.cs
+C:\Git\aspnet-5-web-api-workshop\module-3\03-03 Consuming ASP.NET Web API in Javascript\end\ChinookASPNETWebAPI.API\obj\Debug\net5.0\ChinookASPNETWebAPI.API.csproj.CoreCompileInputs.cache
+C:\Git\aspnet-5-web-api-workshop\module-3\03-03 Consuming ASP.NET Web API in Javascript\end\ChinookASPNETWebAPI.API\obj\Debug\net5.0\ChinookASPNETWebAPI.API.MvcApplicationPartsAssemblyInfo.cache

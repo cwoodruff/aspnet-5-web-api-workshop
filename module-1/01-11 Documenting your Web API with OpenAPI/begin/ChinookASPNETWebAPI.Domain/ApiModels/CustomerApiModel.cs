@@ -18,7 +18,7 @@ namespace ChinookASPNETWebAPI.Domain.ApiModels
         public string Phone { get; set; }
         public string Fax { get; set; }
         public string Email { get; set; }
-        public int? SupportRepId { get; set; }
+        public int SupportRepId { get; set; }
         public string SupportRepName { get; set; }
 
         public IList<InvoiceApiModel> Invoices { get; set; }

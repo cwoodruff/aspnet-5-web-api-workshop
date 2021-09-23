@@ -1,0 +1,278 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.API\\ChinookASPNETWebAPI.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.API\\ChinookASPNETWebAPI.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.API\\ChinookASPNETWebAPI.API.csproj",
+        "projectName": "ChinookASPNETWebAPI.API",
+        "projectPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.API\\ChinookASPNETWebAPI.API.csproj",
+        "packagesPath": "C:\\Users\\cwood\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cwood\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Data\\ChinookASPNETWebAPI.Data.csproj": {
+                "projectPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Data\\ChinookASPNETWebAPI.Data.csproj"
+              },
+              "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Domain\\ChinookASPNETWebAPI.Domain.csproj": {
+                "projectPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Domain\\ChinookASPNETWebAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Data\\ChinookASPNETWebAPI.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Data\\ChinookASPNETWebAPI.Data.csproj",
+        "projectName": "ChinookASPNETWebAPI.Data",
+        "projectPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Data\\ChinookASPNETWebAPI.Data.csproj",
+        "packagesPath": "C:\\Users\\cwood\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cwood\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Domain\\ChinookASPNETWebAPI.Domain.csproj": {
+                "projectPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Domain\\ChinookASPNETWebAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Domain\\ChinookASPNETWebAPI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Domain\\ChinookASPNETWebAPI.Domain.csproj",
+        "projectName": "ChinookASPNETWebAPI.Domain",
+        "projectPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Domain\\ChinookASPNETWebAPI.Domain.csproj",
+        "packagesPath": "C:\\Users\\cwood\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\aspnet-5-web-api-workshop\\module-3\\03-03 Consuming ASP.NET Web API in Javascript\\end\\ChinookASPNETWebAPI.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cwood\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
