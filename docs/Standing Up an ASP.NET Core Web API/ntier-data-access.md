@@ -178,22 +178,15 @@ public static IServiceCollection AddConnectionProvider(this IServiceCollection s
 }
 ```
 
+## CALL ADDCONNECTIONPROVIDER() IN CONFIGURESERVICES IN API PROJECT'S StartUP
+
+```csharp
+services.AddConnectionProvider(Configuration);
+```
+
+
 
 ## REMOVE ONCONFIGURING() FROM DBCONTEXT
 
 
 ## REMOVE THE DBCONTEXT CONSTRUCTOR W/O A PARAMETER
-
-
-
-
-
-
-
-
-
-
-
-
-
-
