@@ -5,7 +5,7 @@ author: cwoodruff
 ---
 # Developing the API endpoints
 
-## START FROM PREVIOUS MODULE"S END
+## START FROM PREVIOUS MODULE'S END
 [Developing the API Data access](ntier-data-access.md)
 
 ## ADD APIMODELS TO DOMAIN

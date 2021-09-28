@@ -5,5 +5,5 @@ author: cwoodruff
 ---
 # Formatting Response Data in your API
 
-## START FROM PREVIOUS MODULE"S END
+## START FROM PREVIOUS MODULE'S END
 [Documenting your API with OpenAPI](documenting-with-openapi.md)
