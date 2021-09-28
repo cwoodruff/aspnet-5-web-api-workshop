@@ -24,7 +24,7 @@ namespace ChinookASPNETWebAPI.Domain.Entities
         public string Phone { get; set; }
         public string Fax { get; set; }
         public string Email { get; set; }
-        public int? SupportRepId { get; set; }
+        public int SupportRepId { get; set; }
 
 
         public virtual Employee SupportRep { get; set; }
