@@ -5,6 +5,9 @@ author: cwoodruff
 ---
 # Versioning your Web API
 
+## START FROM PREVIOUS MODULE"S END
+[Identity in your Web API]](identity.md)
+
 ## ADD VERSIONING NUGET PACKAGE TO API PROJECT
 
 ```dos

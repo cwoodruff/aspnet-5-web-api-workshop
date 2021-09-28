@@ -5,6 +5,9 @@ author: cwoodruff
 ---
 # Developing the Web API Business Rules
 
+## START FROM PREVIOUS MODULE"S END
+[Developing the API endpoints](ntier-api-endpoints.md)
+
 ## ADD CROSS ORIGIN RESOURCE SHARING (CORS) TO API PROJECT
 
 ### ADD ADDCORS() TO SERVICESCONFIGURATION.CS

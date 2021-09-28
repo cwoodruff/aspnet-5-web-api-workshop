@@ -1,6 +1,9 @@
 ---
-title: Formatting Reponse Data in your API
+title: Formatting Response Data in your API
 description: Formatting Reponse Data in your API
 author: cwoodruff
 ---
-# Formatting Reponse Data in your API
+# Formatting Response Data in your API
+
+## START FROM PREVIOUS MODULE"S END
+[Documenting your API with OpenAPI](documenting-with-openapi.md)

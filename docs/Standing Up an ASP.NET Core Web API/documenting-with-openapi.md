@@ -5,6 +5,9 @@ author: cwoodruff
 ---
 # Documenting your API with OpenAPI
 
+## START FROM PREVIOUS MODULE"S END
+[Versioning your Web API](versioning.md)
+
 ## ADD OPENAPI/SWAGGER NUGET PACKAGES TO API
 
 ```dos

@@ -5,6 +5,9 @@ author: cwoodruff
 ---
 # Identity in your Web API
 
+## START FROM PREVIOUS MODULE"S END
+[Caching Data in Your API](caching-data.md)
+
 ## INSTALL NUGET PACKAGES TO API PROJECT
 
 ```dos

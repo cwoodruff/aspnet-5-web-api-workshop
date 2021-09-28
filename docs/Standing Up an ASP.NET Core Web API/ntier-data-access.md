@@ -5,6 +5,9 @@ author: cwoodruff
 ---
 # Developing the API Data access
 
+## START FROM PREVIOUS MODULE"S END
+[Designing the NTier API](ntier-api-endpoints.md)
+
 ## ADD PROJECT REFERENCE FOR API PROJECT
 
 ![](ntier-data-access/Snag_d64f3d5.png)
