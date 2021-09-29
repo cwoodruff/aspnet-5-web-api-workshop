@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <TargetFramework>net5.0</TargetFramework>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="DbInfo\"/>
+        <Folder Include="Validation\"/>
+        <Folder Include="Supervisor\"/>
+        <Folder Include="Repositories\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="10.2.3"/>
+        <PackageReference Include="FluentValidation.AspNetCore" Version="10.2.3"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="5.0.7"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.7">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="5.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0"/>
+        <PackageReference Include="System.Text.Json" Version="5.0.2"/>
+    </ItemGroup>
+
+</Project>
