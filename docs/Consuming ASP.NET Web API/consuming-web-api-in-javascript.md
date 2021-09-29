@@ -5,6 +5,14 @@ author: cwoodruff
 ---
 # Consuming ASP.NET Web API in Javascript
 
+## OPEN SOLUTION TO BEGIN
+
+Located in Module 3
+
+```plaintext
+aspnet-5-web-api-workshop\module-3\03-03 Consuming ASP.NET Web API in Javascript\begin
+```
+
 ## ADD LINES TO CONFIGURE IN STARTUP.CS IN API PROJECT
 
 ```csharp
