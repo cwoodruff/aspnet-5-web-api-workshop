@@ -6,19 +6,15 @@ using System.Threading.Tasks;
 using ChinookASPNETWebAPI.Domain.ApiModels;
 using ChinookASPNETWebAPI.Domain.Supervisor;
 using FluentValidation;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ChinookASPNETWebAPI.API.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     [EnableCors("CorsPolicy")]
-    [ApiVersion( "1.0" )]
     public class AlbumController : ControllerBase
     {
         private readonly IChinookSupervisor _chinookSupervisor;

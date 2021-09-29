@@ -7,9 +7,7 @@ using ChinookASPNETWebAPI.Domain.Entities;
 using ChinookASPNETWebAPI.Domain.Supervisor;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
 using Xunit;
 
 namespace ChinookASPNETWebAPI.UnitTest.Supervisor
@@ -52,7 +50,7 @@ namespace ChinookASPNETWebAPI.UnitTest.Supervisor
             // Arrange
             _context.Albums.Add(album1);
             _context.Albums.Add(album2);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             // Act
             var albums = (await _super.GetAllAlbum()).ToList();
@@ -61,25 +59,6 @@ namespace ChinookASPNETWebAPI.UnitTest.Supervisor
             albums.Count.Should().Be(2);
             albums.Should().Contain(x => x.Id == 12);
             albums.Should().Contain(x => x.Id == 123);
-        }
-
-        [Fact]
-        public void GetAlbumByID_MatchingAlbumInDB_ReturnsIt()
-        {
-            // Arrange
-            var albumId = 1;
-            var artistId = 1234;
-
-            // We are currently required to care about an Artist ID because the convert part of album specifically references the artist repository as well.
-            _context.Artists.Add(new Artist() { Id = artistId });
-            _context.Albums.Add(new Album() { Id = 1, ArtistId = 1234 });
-            _context.SaveChanges();
-
-            // Act
-            var album = _super.GetAlbumById(albumId);
-
-            // Assert
-            album.Id.Should().Be(1);
         }
     }
 }

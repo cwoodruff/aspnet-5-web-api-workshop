@@ -1,12 +1,11 @@
 ﻿using ChinookASPNETWebAPI.Domain.Entities;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
 namespace ChinookASPNETWebAPI.Data.Data
 {
-    public partial class ChinookContext : IdentityDbContext
+    public partial class ChinookContext : DbContext
     {
         public ChinookContext(DbContextOptions<ChinookContext> options)
             : base(options)
@@ -28,8 +27,6 @@ namespace ChinookASPNETWebAPI.Data.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
 
             modelBuilder.Entity<Album>(entity =>

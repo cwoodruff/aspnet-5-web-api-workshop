@@ -11,13 +11,14 @@ namespace ChinookASPNETWebAPI.IntegrationTest.API
     public class AlbumApiTest
     {
         private readonly HttpClient _client;
+        private TestServer _server;
 
         public AlbumApiTest()
         {
-            var server = new TestServer(new WebHostBuilder()
+            _server = new TestServer(new WebHostBuilder()
                 .UseEnvironment("Development")
                 .UseStartup<Startup>());
-            _client = server.CreateClient();
+            _client = _server.CreateClient();
         }
 
         [Theory]
@@ -37,7 +38,7 @@ namespace ChinookASPNETWebAPI.IntegrationTest.API
 
         [Theory]
         [InlineData("GET", 1)]
-        public async Task AlbumGetTest(string method, int? id = null)
+        public async Task AlbumGetTest(string method, int id)
         {
             // Arrange
             var request = new HttpRequestMessage(new HttpMethod(method), $"/api/Album/{id}");

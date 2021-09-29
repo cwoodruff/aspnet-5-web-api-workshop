@@ -3,11 +3,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using ChinookASPNETWebAPI.Data.Data;
 using ChinookASPNETWebAPI.Data.Repositories;
+using ChinookASPNETWebAPI.Domain.Entities;
 using ChinookASPNETWebAPI.Domain.Supervisor;
+using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
 using Xunit;
 
 namespace ChinookASPNETWebAPI.UnitTest.Supervisor
@@ -44,11 +44,18 @@ namespace ChinookASPNETWebAPI.UnitTest.Supervisor
         [Fact]
         public async Task ArtistGetAll()
         {
+            // Arrange
+            var artistId = 1;
+
+            // We are currently required to care about an Artist ID because the convert part of album specifically references the artist repository as well.
+            _context.Artists.Add(new Artist() { Id = artistId });
+            await _context.SaveChangesAsync();
+
             // Act
-            var artists = (await _super.GetAllArtist()).ToList();
+            var artist = _super.GetArtistById(artistId);
 
             // Assert
-            Assert.True(artists.Count > 1, "The number of artists was not greater than 1");
+            artist.Id.Should().Be(1);
         }
     }
 }

@@ -16,7 +16,6 @@ namespace ChinookASPNETWebAPI.API.Controllers
     [ApiController]
     [EnableCors("CorsPolicy")]
     [ResponseCache(Duration = 604800)]
-    [ApiVersion( "1.0" )]
     public class GenreController : ControllerBase
     {
         private readonly IChinookSupervisor _chinookSupervisor;
