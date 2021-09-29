@@ -5,15 +5,14 @@ author: cwoodruff
 ---
 # Creating and using Integrating Testing for your API
 
-## CREATE NEW PROJECT FOR INTEGRATION TESTING
+## OPEN SOLUTION IN THE TESTING MODULE FOR INTEGRATION TESTING
 
-ChinookASPNETWebAPI.IntegrationTest
+\aspnet-5-web-api-workshop\module-2\02-02 Creating and using Integrating Testing for your Web API\end
 
-## ADD NUGET PACKAGES TO INTEGRATIONTEST
+## EXPLORER THE ChinookASPNETWebAPI.IntegrationTest PROJECT AND UNDERSTAND THE TESTS
 
-```dos
-dotnet add package Microsoft.AspNetCore.TestHost
-```
+This will give you a good insight into how to create unit tests for different components of your Web API
 
+## CREATE ADDITIONAL INTEGRATION TESTS
 
-## CREATE UNIT TESTS FOR API ENDPOINTS
+Using the existing integration tests for the Album as a guide, build more integration tests for some of the other models in the solution.

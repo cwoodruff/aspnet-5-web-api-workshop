@@ -5,22 +5,22 @@ author: cwoodruff
 ---
 # Creating and using Unit Testing for your API
 
-## CREATE NEW PROJECT FOR UNIT TESTING
+## OPEN SOLUTION IN THE TESTING MODULE FOR UNIT TESTING
 
-ChinookASPNETWebAPI.UnitTest
+\aspnet-5-web-api-workshop\module-2\02-01 Creating and using Unit Testing for your Web API\end
 
-## ADD NUGET PACKAGEs TO UNITTEST
+## EXPLORER THE ChinookASPNETWebAPI.UnitTest PROJECT AND UNDERSTAND THE TESTS
 
-```dos
-dotnet add package FluentAssertions
-dotnet add package Microsoft.EntityFrameworkCore.InMemory
-dotnet add package Xunit.DependencyInjection
-```
+This will give you a good insight into how to create unit tests for different components of your Web API
 
-## CREATE UNIT TESTS FOR DATA REPOSITORIES
+## CREATE ADDITIONAL UNIT TESTS FOR DATA REPOSITORIES
 
+Using the existing tests for the Album and Artist Data Repositories as a guide, build unit tests for some of the other models in the solution.
 
-## CREATE UNIT TESTS FOR SUPERVISOR
+## CREATE ADDITIONAL UNIT TESTS FOR SUPERVISOR
 
+Using the existing tests for the Album and Artist Supervisor as a guide, build unit tests for some of the other models in the solution.
 
-## CREATE UNIT TESTS FOR VALIDATORS
+## CREATE ADDITIONAL UNIT TESTS FOR VALIDATORS
+
+Using the existing tests for the Album Validator as a guide, build unit tests for some of the other models in the solution.
