@@ -70,6 +70,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 ```dos
 dotnet add package FluentValidation
+dotnet add package FluentValidation.AspNetCore
 ```
 
 ## ADD VALIDATORS TO DOMAIN PROJECT
@@ -127,6 +128,43 @@ public async Task<bool> UpdateAlbum(AlbumApiModel albumApiModel)
     return await _albumRepository.Update(album);
 }
 ```
+
+## ADD VALIDATORS TO DEPENDENCY INJECTION IN STARTUP IN API PROJECT
+
+```csharp
+public static void ConfigureValidators(this IServiceCollection services)
+{
+    services.AddFluentValidation()
+        .AddTransient<IValidator<AlbumApiModel>, AlbumValidator>()
+        .AddTransient<IValidator<ArtistApiModel>, ArtistValidator>()
+        .AddTransient<IValidator<CustomerApiModel>, CustomerValidator>()
+        .AddTransient<IValidator<EmployeeApiModel>, EmployeeValidator>()
+        .AddTransient<IValidator<GenreApiModel>, GenreValidator>()
+        .AddTransient<IValidator<InvoiceApiModel>, InvoiceValidator>()
+        .AddTransient<IValidator<InvoiceLineApiModel>, InvoiceLineValidator>()
+        .AddTransient<IValidator<MediaTypeApiModel>, MediaTypeValidator>()
+        .AddTransient<IValidator<PlaylistApiModel>, PlaylistValidator>()
+        .AddTransient<IValidator<TrackApiModel>, TrackValidator>();
+}
+```
+
+### ADD CONFIGUREVALIDATORS TO CONFIGURESERVICES
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddConnectionProvider(Configuration);
+    services.AddAppSettings(Configuration);
+    services.ConfigureRepositories();
+    services.ConfigureSupervisor();
+    services.ConfigureValidators();
+    services.AddAPILogging();
+    services.AddCORS();
+    services.AddHealthChecks();
+    services.AddControllers();
+}
+```
+
 
 ## ADD ERROR HANDLING IN ACTIONS
 
