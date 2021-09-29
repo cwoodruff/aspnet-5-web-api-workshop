@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "3f3ea339-36ea-4409-aaf8-ab34e7eb6643",
+		"name": "ASP.NET Web API Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Jwt Register",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Jwt Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Albums",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImEyZTM0MDRlLTIxNjktNDcxNy05NmNiLTc1NGVmODU5NjI1YiIsInN1YiI6ImN3b29kcnVmZkBsaXZlLmNvbSIsImVtYWlsIjoiY3dvb2RydWZmQGxpdmUuY29tIiwianRpIjoiNTkxZDg3YTUtMzg0NS00YmZiLTgwMTgtNWNhYWFmMDJhZDZmIiwibmJmIjoxNjMxNDk0NzU1LCJleHAiOjE2MzE1MTYzNTUsImlhdCI6MTYzMTQ5NDc1NX0.mDybM2i2mGFLoCY-qz791Lj8e_rWJotQkh_R7m50wcotg5Q_BGZpZMYq0XXGU6apYPDjjnMGpRKBHYFZb1ISFQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44320/api/Album",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44320",
+					"path": [
+						"api",
+						"Album"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Customers V1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Customers V2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Customers V2 Header",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "2.0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44320/api/Customer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44320",
+					"path": [
+						"api",
+						"Customer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
