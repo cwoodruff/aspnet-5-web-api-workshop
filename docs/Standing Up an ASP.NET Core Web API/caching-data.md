@@ -224,6 +224,20 @@ dotnet tool install --global dotnet-sql-cache
 
 ![](caching-data/Snag_d81a70e.png)
 
+### CREATE NEW EMPTY DATABASE ChinookCacheDb IN MSSQL
+
+```sql
+USE master;
+GO
+CREATE DATABASE ChinookCacheDb;
+GO
+-- Verify the database files and sizes
+SELECT name, size, size*1.0/128 AS [Size in MBs]
+FROM sys.master_files
+WHERE name = N'ChinookCacheDb';
+GO
+```
+
 ### Run from Command Prompt
 
 ```dos
