@@ -325,10 +325,5 @@ public class AlbumController : ControllerBase
 }
 ```
 
-
-
-
-
-
-
+## ERROR HANDLING AND RETURNING PROBLEM DETAILS
 

@@ -196,7 +196,6 @@ namespace ChinookASPNETWebAPI.API.Configurations
 }
 ```
 
-
 ## ADD SERVICESCONFIGURATION TO API PROJECT
 
 ```csharp
@@ -221,6 +220,19 @@ public static class ServicesConfiguration
         services.AddScoped<IChinookSupervisor, ChinookSupervisor>();
     }
 }
+```
+
+## ADD ConfigureRepositories() AND ConfigureSupervisor() TO CONFIGURESERVICES IN API PROJECT
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddConnectionProvider(Configuration);
+            services.AddAppSettings(Configuration);
+            services.ConfigureRepositories();
+            services.ConfigureSupervisor();
+            services.AddControllers();
+        }
 ```
 
 
@@ -289,12 +301,31 @@ public class AlbumController : ControllerBase
 }
 ```
 
+## ADD LOGGING TO API PROJECT
 
+```csharp
+public static void AddAPILogging(this IServiceCollection services)
+{
+    services.AddLogging(builder => builder
+        .AddConsole()
+        .AddFilter(level => level >= LogLevel.Information)
+    );
+}
+```
 
+## ADD ConfigureRepositories() AND ConfigureSupervisor() TO CONFIGURESERVICES IN API PROJECT
 
-
-
-
-
+```csharp
+public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddConnectionProvider(Configuration);
+            services.AddAppSettings(Configuration);
+            services.ConfigureRepositories();
+            services.ConfigureSupervisor();
+            services.ConfigureValidators();
+            services.AddAPILogging();
+            services.AddControllers().AddNewtonsoftJson();
+        }
+```
 
 

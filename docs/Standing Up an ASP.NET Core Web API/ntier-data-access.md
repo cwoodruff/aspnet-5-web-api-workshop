@@ -151,6 +151,49 @@ namespace ChinookASPNETWebAPI.Data.Repositories
     }
 }
 ```
+
+## ADD CONNECTIONSTRING TO APPSETTINGS.JSON
+
+```json
+"ConnectionStrings": {
+  "ChinookDbWindows": "Server=.;Database=Chinook;Trusted_Connection=True;Application Name=ChinookASPNETCoreAPINTier",
+  "ChinookDbDocker": "Server=localhost,1433;Database=Chinook;User=sa;Password=P@55w0rd;Trusted_Connection=False;Application Name=ChinookASPNETCoreAPINTier"
+},
+```
+
+## ADD CONFIGUREAPPSETTINGS TO API PROJECT
+
+### CONFIGUREAPPSETTINGS CLASS in ONFIGURATIONS FOLDER
+
+```csharp
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace Chinook.API.Configurations
+{
+    public static class ConfigureAppSettings
+    {
+        public static IServiceCollection AddAppSettings(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.Configure<AppSettings>(_ => configuration.GetSection("AppSettings").Bind(_));
+
+            return services;
+        }
+    }
+}
+```
+
+### ADD AddAppSettings TO CONFIGURESERVICES IN API PROJECT
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddConnectionProvider(Configuration);
+    services.AddAppSettings(Configuration);
+    services.AddControllers();
+}
+```
+
+
 ## ADD DBCONTEXT TO DEPENDANCY INJECTION IN API PROJECT
 
 ![](ntier-data-access/Snag_b4acf9b.png)

@@ -22,16 +22,27 @@ dotnet add package Microsoft.AspNetCore.Identity.UI
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
 ```
 
+## RESTORE UPDATED CHINOOK DB OR ADD IDENTITY TABLES TO EXISTING DB
+
+You can either restore a new database using a BAK file (if using MSSQL 2019) or run a SQL script if using older version of MSSQL.
+
+### RESTORING UPDATED CHINOOK DB
+
+
+### RUN SQL SCRIPT TO ADD IDENTITY TABLES TO EXISTING CHINOOK DB
+
+
 ## UPDATE OUR APPSETTINGS.JSON IN API PROJECT
 **Note:** Will need to <a href="https://www.random.org/strings/" target="_blank">generate</a> your new 32 character string. 
 
 ```json
 "JwtConfig": {
-    "SecretKey" : "jkbflfzogupbyhypamekltpwkumodlfa"
+    "Secret" : "jkbflfzogupbyhypamekltpwkumodlfa"
   },
 ** Note: https://www.random.org/string
 ```
-![](identity/Snag_eff2440.png)
+![](identity/Snag_180a24f.png)
+
 
 ## CREATE NEW CLASS IN CONFIGURATION FOLDER IN API PROJECT
 
