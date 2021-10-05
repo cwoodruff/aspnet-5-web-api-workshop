@@ -9,5 +9,4 @@ For the source code for the workshop visit the [ASP.NET 5 Web API Workshop](http
 
 Interested in learning about designing, architecting and developing Web APIs using ASP.NET 5?
 
-Sign up for the VSLive! 2-Day Hands-On Training Seminar at [Learn to Produce Effective
-Web APIs with ASP.NET 5 Workshop](https://vslive.com/events/training-seminars/2021/sep28/home.aspx)
+I am looking at updating the content and code demos to ASP.NET 6 before 2022 and then have several workshops in the first half of the new year! Ask me about doing a workshop. My email is [cwoodruff@live.com](mailto:cwoodruff@live.com).
