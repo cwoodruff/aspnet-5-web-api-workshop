@@ -9,7 +9,7 @@ Go to the <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloa
 
 ![](images/mssql-2019-dev-download.png)
 
-# Creating the Chinook in MSSQL 2019
+# Creating the Chinook database in MSSQL 2019
 
 Get the <a href="https://github.com/cwoodruff/aspnet-5-web-api-workshop/blob/main/module-1/01-05%20Developing%20Data%20Access%20for%20your%20Web%20API/database/Chinook.bak" target="_blank">Chinook database</a> for this workshop in the GitHub repo. The file is a BAK backup so we will restore it to where you have MSSQL 2019 installed.
 

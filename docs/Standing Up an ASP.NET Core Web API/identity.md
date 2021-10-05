@@ -26,11 +26,11 @@ dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 You can either restore a new database using a BAK file (if using MSSQL 2019) or run a SQL script if using older version of MSSQL.
 
-### RESTORING UPDATED CHINOOK DB
-
+### RESTORING UPDATED CHINOOK DB WITH BAK FILE
+Download the <a href="https://github.com/cwoodruff/aspnet-5-web-api-workshop/blob/main/module-1/01-09%20Identity%20in%20your%20Web%20API/database/ChinookWithIdentity.bak" target="_blank">Chinook database BAK file</a> for this part of the workshop in the GitHub repo. The file is a backup so we will restore it to where you have MSSQL 2019 installed.
 
 ### RUN SQL SCRIPT TO ADD IDENTITY TABLES TO EXISTING CHINOOK DB
-
+If you don't have MSSQL 2019 installed you can update your Chinook database by running this <a href="https://github.com/cwoodruff/aspnet-5-web-api-workshop/blob/main/module-1/01-09%20Identity%20in%20your%20Web%20API/database/ChinookWithIdentity.sql" target="_blank">SQL script</a> against your database to add the tables needed for Identity for this part of the workshop.
 
 ## UPDATE OUR APPSETTINGS.JSON IN API PROJECT
 **Note:** Will need to <a href="https://www.random.org/strings/" target="_blank">generate</a> your new 32 character string. 
